@@ -1,0 +1,34 @@
+{
+  "name": "inferno7-rematch-seed",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rematch/core": "^1.0.6",
+    "@rematch/immer": "^1.1.0",
+    "@rematch/loading": "^1.1.2",
+    "@rematch/select": "^2.0.3",
+    "@rematch/updated": "^0.1.5",
+    "inferno": "^7.1.0",
+    "inferno-redux": "^7.1.0",
+    "inferno-router": "^7.1.0",
+    "inferno-scripts": "7.0.4",
+    "re-reselect": "^2.3.0",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test",
+    "eject--danger": "inferno-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "inferno-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {}
+}

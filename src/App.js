@@ -1,5 +1,6 @@
-import { version, Component } from 'inferno';
+import { version, Component } from 'inferno'
 import { connect } from 'inferno-redux'
+import { Link } from 'inferno-router'
 
 import {namespace as apiNamespace} from './api/model/actionTypes'
 // import store from './store'
@@ -30,7 +31,16 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Logo width="80" height="80" />
-          <p>{`Welcome to Inferno ${version}`}</p>
+          <p>
+            {`Welcome to Inferno ${version} `}
+          </p>
+          <p>
+            Routes:{' '}
+            <Link to='/'> >>home</Link>{' '}
+            <Link to='/posts/123'> >>posts</Link>{' '}
+          </p>
+          <p>
+            Router URL & Params: {this.props.match.url} {JSON.stringify(this.props.match.params)}</p>
           <p>{this.props.isToggled ? 'ON' : 'OFF'}</p>
           <p>
             <button onClick={this.props.toggle}>TOGGLE!</button>

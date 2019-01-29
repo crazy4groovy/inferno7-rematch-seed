@@ -2,6 +2,21 @@
   "name": "inferno7-rematch-seed",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://crazy4groovy.github.io/inferno7-rematch-seed",
+  "scripts": {
+    "build": "inferno-scripts build",
+    "deploy": "gh-pages -d build",
+    "eject--danger": "inferno-scripts eject",
+    "predeploy": "npm run build",
+    "start": "inferno-scripts start",
+    "test": "inferno-scripts test"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@rematch/core": "^1.0.6",
     "@rematch/immer": "^1.1.0",
@@ -15,20 +30,8 @@
     "re-reselect": "^2.3.0",
     "redux": "^4.0.1"
   },
-  "scripts": {
-    "start": "inferno-scripts start",
-    "build": "inferno-scripts build",
-    "test": "inferno-scripts test",
-    "eject--danger": "inferno-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "inferno-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "inferno-devtools": "^7.1.1"
+  }
 }
